@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4403DAC322FAA5180076CE64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAC222FAA5180076CE64 /* AppDelegate.m */; };
-		4403DAC622FAA5180076CE64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAC522FAA5180076CE64 /* ViewController.m */; };
-		4403DAC922FAA5180076CE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4403DAC722FAA5180076CE64 /* Main.storyboard */; };
+		4403DAC922FAA5180076CE64 /* AlbumList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4403DAC722FAA5180076CE64 /* AlbumList.storyboard */; };
 		4403DACB22FAA51A0076CE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4403DACA22FAA51A0076CE64 /* Assets.xcassets */; };
 		4403DACE22FAA51A0076CE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4403DACC22FAA51A0076CE64 /* LaunchScreen.storyboard */; };
 		4403DAD122FAA51A0076CE64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAD022FAA51A0076CE64 /* main.m */; };
 		4403DADB22FAA51A0076CE64 /* simpleappsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DADA22FAA51A0076CE64 /* simpleappsTests.m */; };
 		4403DAE622FAA51A0076CE64 /* simpleappsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAE522FAA51A0076CE64 /* simpleappsUITests.m */; };
+		4403DAF922FAB2820076CE64 /* AlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAF322FAB2820076CE64 /* AlbumCell.m */; };
+		4403DAFA22FAB2820076CE64 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAF422FAB2820076CE64 /* Album.m */; };
+		4403DAFB22FAB2820076CE64 /* Album+Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAF622FAB2820076CE64 /* Album+Provider.m */; };
+		4403DB0322FAB2920076CE64 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DAFE22FAB2920076CE64 /* Track.m */; };
+		4403DB0422FAB2920076CE64 /* Track+Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DB0022FAB2920076CE64 /* Track+Provider.m */; };
+		4403DB0622FAB9D30076CE64 /* AlbumDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4403DB0522FAB9D30076CE64 /* AlbumDetail.storyboard */; };
+		4403DB0C22FABA5B0076CE64 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DB0B22FABA5A0076CE64 /* AlbumViewController.m */; };
+		4403DB0F22FABAB50076CE64 /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DB0E22FABAB50076CE64 /* AudioManager.m */; };
+		4403DB1722FAE14F0076CE64 /* MiniPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DB1422FAE14F0076CE64 /* MiniPlayerView.m */; };
+		4403DB1822FAE14F0076CE64 /* MiniPlayerTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DB1522FAE14F0076CE64 /* MiniPlayerTabBar.m */; };
+		4403DB1B22FB03630076CE64 /* AlbumCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DB1A22FB03630076CE64 /* AlbumCollectionViewController.m */; };
+		4403DB1E22FB039E0076CE64 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403DB1D22FB039E0076CE64 /* AlbumCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +49,7 @@
 		4403DABE22FAA5180076CE64 /* simpleapps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleapps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4403DAC122FAA5180076CE64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4403DAC222FAA5180076CE64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4403DAC422FAA5180076CE64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4403DAC522FAA5180076CE64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4403DAC822FAA5180076CE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4403DAC822FAA5180076CE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AlbumList.storyboard; sourceTree = "<group>"; };
 		4403DACA22FAA51A0076CE64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4403DACD22FAA51A0076CE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4403DACF22FAA51A0076CE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +60,29 @@
 		4403DAE122FAA51A0076CE64 /* simpleappsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleappsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4403DAE522FAA51A0076CE64 /* simpleappsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleappsUITests.m; sourceTree = "<group>"; };
 		4403DAE722FAA51A0076CE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4403DAF322FAB2820076CE64 /* AlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCell.m; sourceTree = "<group>"; };
+		4403DAF422FAB2820076CE64 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		4403DAF522FAB2820076CE64 /* Album+Provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Album+Provider.h"; sourceTree = "<group>"; };
+		4403DAF622FAB2820076CE64 /* Album+Provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Album+Provider.m"; sourceTree = "<group>"; };
+		4403DAF722FAB2820076CE64 /* AlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCell.h; sourceTree = "<group>"; };
+		4403DAF822FAB2820076CE64 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		4403DAFE22FAB2920076CE64 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		4403DAFF22FAB2920076CE64 /* Track+Provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Track+Provider.h"; sourceTree = "<group>"; };
+		4403DB0022FAB2920076CE64 /* Track+Provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Track+Provider.m"; sourceTree = "<group>"; };
+		4403DB0122FAB2920076CE64 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		4403DB0522FAB9D30076CE64 /* AlbumDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumDetail.storyboard; sourceTree = "<group>"; };
+		4403DB0A22FABA5A0076CE64 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		4403DB0B22FABA5A0076CE64 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		4403DB0D22FABAB50076CE64 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		4403DB0E22FABAB50076CE64 /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
+		4403DB1322FAE14F0076CE64 /* MiniPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniPlayerView.h; sourceTree = "<group>"; };
+		4403DB1422FAE14F0076CE64 /* MiniPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniPlayerView.m; sourceTree = "<group>"; };
+		4403DB1522FAE14F0076CE64 /* MiniPlayerTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniPlayerTabBar.m; sourceTree = "<group>"; };
+		4403DB1622FAE14F0076CE64 /* MiniPlayerTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniPlayerTabBar.h; sourceTree = "<group>"; };
+		4403DB1922FB03630076CE64 /* AlbumCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewController.h; sourceTree = "<group>"; };
+		4403DB1A22FB03630076CE64 /* AlbumCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewController.m; sourceTree = "<group>"; };
+		4403DB1C22FB039E0076CE64 /* AlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		4403DB1D22FB039E0076CE64 /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +133,32 @@
 		4403DAC022FAA5180076CE64 /* simpleapps */ = {
 			isa = PBXGroup;
 			children = (
+				4403DB0D22FABAB50076CE64 /* AudioManager.h */,
+				4403DB0E22FABAB50076CE64 /* AudioManager.m */,
+				4403DB1622FAE14F0076CE64 /* MiniPlayerTabBar.h */,
+				4403DB1522FAE14F0076CE64 /* MiniPlayerTabBar.m */,
+				4403DB1322FAE14F0076CE64 /* MiniPlayerView.h */,
+				4403DB1422FAE14F0076CE64 /* MiniPlayerView.m */,
+				4403DAF822FAB2820076CE64 /* Album.h */,
+				4403DAF422FAB2820076CE64 /* Album.m */,
+				4403DAF522FAB2820076CE64 /* Album+Provider.h */,
+				4403DAF622FAB2820076CE64 /* Album+Provider.m */,
+				4403DAF722FAB2820076CE64 /* AlbumCell.h */,
+				4403DAF322FAB2820076CE64 /* AlbumCell.m */,
+				4403DB0122FAB2920076CE64 /* Track.h */,
+				4403DAFE22FAB2920076CE64 /* Track.m */,
+				4403DAFF22FAB2920076CE64 /* Track+Provider.h */,
+				4403DB0022FAB2920076CE64 /* Track+Provider.m */,
 				4403DAC122FAA5180076CE64 /* AppDelegate.h */,
 				4403DAC222FAA5180076CE64 /* AppDelegate.m */,
-				4403DAC422FAA5180076CE64 /* ViewController.h */,
-				4403DAC522FAA5180076CE64 /* ViewController.m */,
-				4403DAC722FAA5180076CE64 /* Main.storyboard */,
+				4403DAC722FAA5180076CE64 /* AlbumList.storyboard */,
+				4403DB0522FAB9D30076CE64 /* AlbumDetail.storyboard */,
+				4403DB1C22FB039E0076CE64 /* AlbumCollectionViewCell.h */,
+				4403DB1D22FB039E0076CE64 /* AlbumCollectionViewCell.m */,
+				4403DB1922FB03630076CE64 /* AlbumCollectionViewController.h */,
+				4403DB1A22FB03630076CE64 /* AlbumCollectionViewController.m */,
+				4403DB0A22FABA5A0076CE64 /* AlbumViewController.h */,
+				4403DB0B22FABA5A0076CE64 /* AlbumViewController.m */,
 				4403DACA22FAA51A0076CE64 /* Assets.xcassets */,
 				4403DACC22FAA51A0076CE64 /* LaunchScreen.storyboard */,
 				4403DACF22FAA51A0076CE64 /* Info.plist */,
@@ -199,6 +252,11 @@
 				TargetAttributes = {
 					4403DABD22FAA5180076CE64 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					4403DAD522FAA51A0076CE64 = {
 						CreatedOnToolsVersion = 10.3;
@@ -236,8 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4403DACE22FAA51A0076CE64 /* LaunchScreen.storyboard in Resources */,
+				4403DB0622FAB9D30076CE64 /* AlbumDetail.storyboard in Resources */,
 				4403DACB22FAA51A0076CE64 /* Assets.xcassets in Resources */,
-				4403DAC922FAA5180076CE64 /* Main.storyboard in Resources */,
+				4403DAC922FAA5180076CE64 /* AlbumList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4403DAC622FAA5180076CE64 /* ViewController.m in Sources */,
+				4403DB1822FAE14F0076CE64 /* MiniPlayerTabBar.m in Sources */,
+				4403DB1722FAE14F0076CE64 /* MiniPlayerView.m in Sources */,
+				4403DB0422FAB2920076CE64 /* Track+Provider.m in Sources */,
+				4403DB0C22FABA5B0076CE64 /* AlbumViewController.m in Sources */,
+				4403DB1E22FB039E0076CE64 /* AlbumCollectionViewCell.m in Sources */,
 				4403DAD122FAA51A0076CE64 /* main.m in Sources */,
 				4403DAC322FAA5180076CE64 /* AppDelegate.m in Sources */,
+				4403DB1B22FB03630076CE64 /* AlbumCollectionViewController.m in Sources */,
+				4403DAFA22FAB2820076CE64 /* Album.m in Sources */,
+				4403DAFB22FAB2820076CE64 /* Album+Provider.m in Sources */,
+				4403DAF922FAB2820076CE64 /* AlbumCell.m in Sources */,
+				4403DB0F22FABAB50076CE64 /* AudioManager.m in Sources */,
+				4403DB0322FAB2920076CE64 /* Track.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +369,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4403DAC722FAA5180076CE64 /* Main.storyboard */ = {
+		4403DAC722FAA5180076CE64 /* AlbumList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4403DAC822FAA5180076CE64 /* Base */,
 			);
-			name = Main.storyboard;
+			name = AlbumList.storyboard;
 			sourceTree = "<group>";
 		};
 		4403DACC22FAA51A0076CE64 /* LaunchScreen.storyboard */ = {
@@ -438,13 +507,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L98QP37VE2;
 				INFOPLIST_FILE = simpleapps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.jp.garlands.simpleapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,13 +525,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L98QP37VE2;
 				INFOPLIST_FILE = simpleapps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.jp.garlands.simpleapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JRc-Qn-DNY">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="dtD-nt-TXh">
+            <objects>
+                <collectionViewController id="P1E-wP-GFk" customClass="AlbumCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rDd-8u-0lk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="2" id="oEB-2N-48t">
+                            <size key="itemSize" width="190" height="220"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCell" id="ZY0-kR-25Z" customClass="AlbumCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="220"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Album Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajb-3u-0My">
+                                            <rect key="frame" x="10" y="154" width="170" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                    <integer key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnX-Ir-1h5">
+                                            <rect key="frame" x="20" y="171.66666666666663" width="150" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETZ-Ob-kTn">
+                                            <rect key="frame" x="25" y="2" width="140" height="140"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ETZ-Ob-kTn" secondAttribute="height" multiplier="1:1" id="3zq-nY-qMh"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowBColor">
+                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                    <size key="value" width="3" height="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="ETZ-Ob-kTn" firstAttribute="leading" secondItem="ZY0-kR-25Z" secondAttribute="leading" constant="25" id="06D-cW-MUA"/>
+                                    <constraint firstAttribute="trailing" secondItem="ETZ-Ob-kTn" secondAttribute="trailing" constant="25" id="2cP-La-LOe"/>
+                                    <constraint firstItem="VnX-Ir-1h5" firstAttribute="firstBaseline" secondItem="Ajb-3u-0My" secondAttribute="baseline" constant="15.333333333333314" id="N6K-je-C2W"/>
+                                    <constraint firstItem="VnX-Ir-1h5" firstAttribute="leading" secondItem="ZY0-kR-25Z" secondAttribute="leadingMargin" constant="12" id="PVo-is-b3a"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Ajb-3u-0My" secondAttribute="trailing" constant="2" id="TFx-qv-Ouj"/>
+                                    <constraint firstItem="Ajb-3u-0My" firstAttribute="leading" secondItem="ZY0-kR-25Z" secondAttribute="leadingMargin" constant="2" id="bvj-5P-zHt"/>
+                                    <constraint firstItem="ETZ-Ob-kTn" firstAttribute="top" secondItem="ZY0-kR-25Z" secondAttribute="top" constant="2" id="cTN-fW-jUS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="VnX-Ir-1h5" secondAttribute="trailing" constant="12" id="k1p-e2-bd3"/>
+                                    <constraint firstItem="Ajb-3u-0My" firstAttribute="top" secondItem="ETZ-Ob-kTn" secondAttribute="bottom" constant="12" id="tac-8c-RBR"/>
+                                </constraints>
+                                <size key="customSize" width="190" height="220"/>
+                                <connections>
+                                    <outlet property="_AlbumTitleLabel" destination="Ajb-3u-0My" id="n36-dh-XTp"/>
+                                    <outlet property="_artworkImageView" destination="ETZ-Ob-kTn" id="RUj-eV-cKq"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="P1E-wP-GFk" id="NeI-SQ-90E"/>
+                            <outlet property="delegate" destination="P1E-wP-GFk" id="FYC-Bj-FaC"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Item" id="uxZ-ee-HOg"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWn-u9-mPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871.0144927536232" y="137.94642857142856"/>
+        </scene>
+        <!--Album Collection View Controller-->
+        <scene sceneID="Vgr-dz-dFh">
+            <objects>
+                <collectionViewController id="0lN-v5-Gls" customClass="AlbumCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="frt-AP-uue">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xUs-T8-Ln1">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCell" id="4YZ-3c-9cP" customClass="AlbumCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Album Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGW-Xu-efp">
+                                            <rect key="frame" x="10" y="154" width="170" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                    <integer key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxh-nc-rau">
+                                            <rect key="frame" x="20" y="171.66666666666663" width="150" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yWV-jC-5lX">
+                                            <rect key="frame" x="25" y="2" width="140" height="140"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="yWV-jC-5lX" secondAttribute="height" multiplier="1:1" id="5gF-1s-TeM"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowBColor">
+                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                    <size key="value" width="3" height="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yWV-jC-5lX" secondAttribute="trailing" constant="25" id="6Xp-bB-d09"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="uxh-nc-rau" secondAttribute="trailing" constant="12" id="KF5-Z0-0CG"/>
+                                    <constraint firstItem="yWV-jC-5lX" firstAttribute="leading" secondItem="4YZ-3c-9cP" secondAttribute="leading" constant="25" id="P58-82-3Bm"/>
+                                    <constraint firstItem="uxh-nc-rau" firstAttribute="leading" secondItem="4YZ-3c-9cP" secondAttribute="leadingMargin" constant="12" id="dEy-rq-daB"/>
+                                    <constraint firstItem="bGW-Xu-efp" firstAttribute="top" secondItem="yWV-jC-5lX" secondAttribute="bottom" constant="12" id="en8-q3-6yf"/>
+                                    <constraint firstItem="bGW-Xu-efp" firstAttribute="leading" secondItem="4YZ-3c-9cP" secondAttribute="leadingMargin" constant="2" id="f4r-Ap-Fjy"/>
+                                    <constraint firstItem="uxh-nc-rau" firstAttribute="firstBaseline" secondItem="bGW-Xu-efp" secondAttribute="baseline" constant="15.333333333333314" id="wBn-bv-9wG"/>
+                                    <constraint firstItem="yWV-jC-5lX" firstAttribute="top" secondItem="4YZ-3c-9cP" secondAttribute="top" constant="2" id="wHE-XR-2Tu"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="bGW-Xu-efp" secondAttribute="trailing" constant="2" id="wwZ-h0-Gf9"/>
+                                </constraints>
+                                <size key="customSize" width="190" height="200"/>
+                                <connections>
+                                    <outlet property="_AlbumTitleLabel" destination="bGW-Xu-efp" id="IFA-fg-PMR"/>
+                                    <outlet property="_artworkImageView" destination="yWV-jC-5lX" id="nqr-ue-aZh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="0lN-v5-Gls" id="6Ub-5a-qRe"/>
+                            <outlet property="delegate" destination="0lN-v5-Gls" id="tPd-Yh-llS"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="zue-UJ-LPV"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0V-8b-E9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3352.1739130434785" y="821.65178571428567"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="k1c-AO-3fa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZsZ-qZ-i2V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="G5z-K7-tvt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Bs-je-K7t">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0lN-v5-Gls" kind="relationship" relationship="rootViewController" id="Fe6-Gd-RcW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOW-sS-F5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442.0289855072465" y="821.65178571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GMz-RH-Pio">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JRc-Qn-DNY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P4C-P4-6EG" customClass="MiniPlayerTabBar">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZsZ-qZ-i2V" kind="relationship" relationship="viewControllers" id="94v-km-Knn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IE9-fN-9Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.8840579710145" y="821.65178571428567"/>
+        </scene>
+    </scenes>
+</document>
