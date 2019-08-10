@@ -34,8 +34,10 @@
     
     if( init == NO )
     {
+#if 0 //use delegate
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveChangeMusic:) name:kChangeMusicNotification object: nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveChangeAudioState:) name:kChangeAudioStateNotification object: nil];
+#endif
     }
     init = YES;
     
@@ -72,6 +74,8 @@
     return ret_size;
 }
 
+#pragma mark - Receive Notification
+#if 0 //use delegate
 -(void)receiveChangeMusic:(NSNotification *)notification
 {
     if( _miniPlayerView != NULL )
@@ -84,6 +88,7 @@
     if( _miniPlayerView != NULL )
         [_miniPlayerView receiveChangeAudioState:state];
 }
+#endif
 
 -(void) createMiniPlayer
 {

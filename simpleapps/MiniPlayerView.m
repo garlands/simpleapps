@@ -11,7 +11,7 @@
 #import "AudioManager.h"
 #import "MiniPlayerTabBar.h"
 
-@interface MiniPlayerView ()
+@interface MiniPlayerView ()<AudioManagerDelegate>
 {
     UIButton *_miniNextButton;
     UIButton *_miniPlayButton;
@@ -35,7 +35,7 @@
 
 -(void) initMiniPlayer
 {
-    avmgr = [AudioManager sharedInstance];
+    avmgr = [[AudioManager sharedInstance] initWithDelegate:self];
     float artsize = self.frame.size.height * .5f;
     UIImage *artworkImage = [avmgr getCurrentTrackArtworkImage:CGSizeMake(artsize, artsize) restoremode:YES];
     if( artworkImage == NULL )
@@ -95,19 +95,34 @@
     [self updateLabels];
 }
 
--(void)receiveChangeMusic
+#pragma mark - AudioManagerDelegate
+- (void) changeAudioStateAvmgr:(int)state
 {
-    [self updateLabels];
+    switch(state){
+        case state_none:
+            [self stopMusic];
+            break;
+        case state_stop:
+            [self stopMusic];
+            break;
+        case state_play:
+            [self updateLabels];
+            [self playMusic];
+            break;
+        case state_terminate:
+            [self stopMusic];
+            break;
+    }
 }
 
--(void)receiveClearMusic
+- (void) errorMusicAvmgr
 {
-    UIImage *artworkImage = [UIImage imageNamed:@"logo.png"];
-    _miniplayerArtworkImageView.image = artworkImage;
-    _miniplayerTitleLabel.text = @"";
-    _miniPlayButton.enabled = NO;
-    _miniNextButton.enabled = NO;
-    [_miniPlayButton setBackgroundImage:[UIImage imageNamed:@"mini_play.png"] forState:UIControlStateNormal];
+    
+}
+
+- (void) updateMusicTitleAvmgr:(NSString*)title
+{
+    [self updateLabels];
 }
 
 -(void) updateLabels
@@ -133,6 +148,13 @@
         _miniplayerArtistLabel.text = @"";
 }
 
+#pragma mark - Receive Notification
+#if 0 //use delegate
+-(void)receiveChangeMusic
+{
+    [self updateLabels];
+}
+
 -(void)receiveChangeAudioState:(int)state
 {
     switch(state){
@@ -152,18 +174,7 @@
             break;
     }
 }
-
--(void) receiveUpdateCasetteState:(BOOL)eject
-{
-    if( eject == YES )
-    {
-        _miniNextButton.enabled = NO;
-        _miniPlayButton.enabled = NO;
-    }else{
-        _miniNextButton.enabled = YES;
-        _miniPlayButton.enabled = YES;
-    }
-}
+#endif
 
 
 -(void)stopMusic
